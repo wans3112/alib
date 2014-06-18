@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B0B1BB91859E13E00F45458 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1B9B1859E13E00F45458 /* Base64.m */; };
+		2B0B1BBA1859E13E00F45458 /* UNIBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1B9E1859E13E00F45458 /* UNIBaseRequest.m */; };
+		2B0B1BBB1859E13E00F45458 /* UNIBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BA01859E13E00F45458 /* UNIBodyRequest.m */; };
+		2B0B1BBC1859E13E00F45458 /* UNISimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BA21859E13E00F45458 /* UNISimpleRequest.m */; };
+		2B0B1BBD1859E13E00F45458 /* UNIHTTPBinaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BA51859E13E00F45458 /* UNIHTTPBinaryResponse.m */; };
+		2B0B1BBE1859E13E00F45458 /* UNIHTTPJsonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BA71859E13E00F45458 /* UNIHTTPJsonResponse.m */; };
+		2B0B1BBF1859E13E00F45458 /* UNIHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BA91859E13E00F45458 /* UNIHTTPResponse.m */; };
+		2B0B1BC01859E13E00F45458 /* UNIHTTPStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BAB1859E13E00F45458 /* UNIHTTPStringResponse.m */; };
+		2B0B1BC11859E13E00F45458 /* UNIJsonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BAD1859E13E00F45458 /* UNIJsonNode.m */; };
+		2B0B1BC21859E13E00F45458 /* UNIHTTPClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BAF1859E13E00F45458 /* UNIHTTPClientHelper.m */; };
+		2B0B1BC31859E13E00F45458 /* UNIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BB11859E13E00F45458 /* UNIHTTPRequest.m */; };
+		2B0B1BC41859E13E00F45458 /* UNIHTTPRequestWithBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BB31859E13E00F45458 /* UNIHTTPRequestWithBody.m */; };
+		2B0B1BC51859E13E00F45458 /* Unirest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BB61859E13E00F45458 /* Unirest.m */; };
+		2B0B1BC61859E13E00F45458 /* UNIUrlConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B1BB81859E13E00F45458 /* UNIUrlConnection.m */; };
+		2BE9D4E3184C7B280016A393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D4E2184C7B280016A393 /* Foundation.framework */; };
+		2BE9D4E5184C7B280016A393 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D4E4184C7B280016A393 /* CoreGraphics.framework */; };
+		2BE9D4E7184C7B280016A393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D4E6184C7B280016A393 /* UIKit.framework */; };
+		2BE9D4ED184C7B280016A393 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9D4EB184C7B280016A393 /* InfoPlist.strings */; };
+		2BE9D4EF184C7B280016A393 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9D4EE184C7B280016A393 /* main.m */; };
+		2BE9D4F3184C7B280016A393 /* AVO_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9D4F2184C7B280016A393 /* AVO_AppDelegate.m */; };
+		2BE9D4F6184C7B280016A393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9D4F4184C7B280016A393 /* Main.storyboard */; };
+		2BE9D4F9184C7B280016A393 /* AVO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9D4F8184C7B280016A393 /* AVO_ViewController.m */; };
+		2BE9D4FB184C7B280016A393 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9D4FA184C7B280016A393 /* Images.xcassets */; };
+		2BE9D502184C7B280016A393 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D501184C7B280016A393 /* XCTest.framework */; };
+		2BE9D503184C7B280016A393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D4E2184C7B280016A393 /* Foundation.framework */; };
+		2BE9D504184C7B280016A393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE9D4E6184C7B280016A393 /* UIKit.framework */; };
+		2BE9D50C184C7B280016A393 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9D50A184C7B280016A393 /* InfoPlist.strings */; };
+		2BE9D50E184C7B280016A393 /* AVOSDKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9D50D184C7B280016A393 /* AVOSDKTestTests.m */; };
+		2BE9D5CE184C87900016A393 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BE9D5CD184C87900016A393 /* 1.jpg */; };
+		2BEC16DF185C921600A436F9 /* AVOAPIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1672185C921600A436F9 /* AVOAPIConstants.m */; };
+		2BEC16E0185C921600A436F9 /* AVOAPICreateBillPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1675185C921600A436F9 /* AVOAPICreateBillPaymentRequest.m */; };
+		2BEC16E1185C921600A436F9 /* AVOAPICreateLocalUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1677185C921600A436F9 /* AVOAPICreateLocalUserRequest.m */; };
+		2BEC16E2185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1679185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.m */; };
+		2BEC16E3185C921600A436F9 /* AVOAPICreateMomentCommentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC167B185C921600A436F9 /* AVOAPICreateMomentCommentRequest.m */; };
+		2BEC16E4185C921600A436F9 /* AVOAPICreateMomentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC167D185C921600A436F9 /* AVOAPICreateMomentRequest.m */; };
+		2BEC16E5185C921600A436F9 /* AVOAPICreateTripSummaryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC167F185C921600A436F9 /* AVOAPICreateTripSummaryRequest.m */; };
+		2BEC16E6185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1681185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.m */; };
+		2BEC16E7185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1683185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.m */; };
+		2BEC16E8185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1685185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.m */; };
+		2BEC16E9185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1687185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.m */; };
+		2BEC16EA185C921600A436F9 /* AVOAPIUpdateUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1689185C921600A436F9 /* AVOAPIUpdateUserRequest.m */; };
+		2BEC16EB185C921600A436F9 /* AVOAPICommonErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC168C185C921600A436F9 /* AVOAPICommonErrorResponse.m */; };
+		2BEC16EC185C921600A436F9 /* AVOAPICreateImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC168E185C921600A436F9 /* AVOAPICreateImageResponse.m */; };
+		2BEC16ED185C921600A436F9 /* AVOAPICreateLocalUserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1690185C921600A436F9 /* AVOAPICreateLocalUserResponse.m */; };
+		2BEC16EE185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1692185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.m */; };
+		2BEC16EF185C921600A436F9 /* AVOAPICreateMomentCommentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1694185C921600A436F9 /* AVOAPICreateMomentCommentResponse.m */; };
+		2BEC16F0185C921600A436F9 /* AVOAPICreateMomentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1696185C921600A436F9 /* AVOAPICreateMomentResponse.m */; };
+		2BEC16F1185C921600A436F9 /* AVOAPICreateTripSummaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC1698185C921600A436F9 /* AVOAPICreateTripSummaryResponse.m */; };
+		2BEC16F2185C921600A436F9 /* AVOAPIGetBillDetailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC169A185C921600A436F9 /* AVOAPIGetBillDetailResponse.m */; };
+		2BEC16F3185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC169C185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.m */; };
+		2BEC16F4185C921600A436F9 /* AVOAPIGetImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC169E185C921600A436F9 /* AVOAPIGetImageResponse.m */; };
+		2BEC16F5185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16A0185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.m */; };
+		2BEC16F6185C921600A436F9 /* AVOAPIGetMomentsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16A2185C921600A436F9 /* AVOAPIGetMomentsResponse.m */; };
+		2BEC16F7185C921600A436F9 /* AVOAPIGetTripMembersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16A4185C921600A436F9 /* AVOAPIGetTripMembersResponse.m */; };
+		2BEC16F8185C921600A436F9 /* AVOAPIGetTripResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16A6185C921600A436F9 /* AVOAPIGetTripResponse.m */; };
+		2BEC16F9185C921600A436F9 /* AVOAPIGetTripsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16A8185C921600A436F9 /* AVOAPIGetTripsResponse.m */; };
+		2BEC16FA185C921600A436F9 /* AVOAPIGetUserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16AA185C921600A436F9 /* AVOAPIGetUserResponse.m */; };
+		2BEC16FB185C921600A436F9 /* NVIOTClientException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16B1185C921600A436F9 /* NVIOTClientException.m */; };
+		2BEC16FC185C921600A436F9 /* NVIOTServiceException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16B3185C921600A436F9 /* NVIOTServiceException.m */; };
+		2BEC16FD185C921600A436F9 /* NVIOTUserAuthFailedException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16B5185C921600A436F9 /* NVIOTUserAuthFailedException.m */; };
+		2BEC16FE185C921600A436F9 /* NVHttpConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16B8185C921600A436F9 /* NVHttpConstans.m */; };
+		2BEC16FF185C921600A436F9 /* NVPlainHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16BA185C921600A436F9 /* NVPlainHttpClient.m */; };
+		2BEC1700185C921600A436F9 /* NVBasicClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16BD185C921600A436F9 /* NVBasicClient.m */; };
+		2BEC1701185C921600A436F9 /* NVInDiskKeyMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16BF185C921600A436F9 /* NVInDiskKeyMananger.m */; };
+		2BEC1702185C921600A436F9 /* NVInMemoryKeyMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16C1185C921600A436F9 /* NVInMemoryKeyMananger.m */; };
+		2BEC1703185C921600A436F9 /* AVOCommModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16C4185C921600A436F9 /* AVOCommModel.m */; };
+		2BEC1704185C921600A436F9 /* AVOImageLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16C6185C921600A436F9 /* AVOImageLink.m */; };
+		2BEC1705185C921600A436F9 /* AVOLocalCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16C8185C921600A436F9 /* AVOLocalCredential.m */; };
+		2BEC1706185C921600A436F9 /* AVOMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16CA185C921600A436F9 /* AVOMoment.m */; };
+		2BEC1707185C921600A436F9 /* AVOMomentBill.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16CC185C921600A436F9 /* AVOMomentBill.m */; };
+		2BEC1708185C921600A436F9 /* AVOMomentBillDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16CE185C921600A436F9 /* AVOMomentBillDetail.m */; };
+		2BEC1709185C921600A436F9 /* AVOMomentBillPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16D0185C921600A436F9 /* AVOMomentBillPayment.m */; };
+		2BEC170A185C921600A436F9 /* AVOMomentComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16D2185C921600A436F9 /* AVOMomentComment.m */; };
+		2BEC170B185C921600A436F9 /* AVOMomentNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16D4185C921600A436F9 /* AVOMomentNote.m */; };
+		2BEC170C185C921600A436F9 /* AVOMomentPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16D6185C921600A436F9 /* AVOMomentPhoto.m */; };
+		2BEC170D185C921600A436F9 /* AVOTripSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16D8185C921600A436F9 /* AVOTripSummary.m */; };
+		2BEC170E185C921600A436F9 /* AVOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16DA185C921600A436F9 /* AVOUser.m */; };
+		2BEC170F185C921600A436F9 /* AVOUserToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16DC185C921600A436F9 /* AVOUserToken.m */; };
+		2BEC1710185C921600A436F9 /* AVOUserTripShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC16DE185C921600A436F9 /* AVOUserTripShip.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BE9D505184C7B280016A393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE9D4D7184C7B280016A393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BE9D4DE184C7B280016A393;
+			remoteInfo = AVOSDKTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B0B1B9A1859E13E00F45458 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		2B0B1B9B1859E13E00F45458 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		2B0B1B9D1859E13E00F45458 /* UNIBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBaseRequest.h; sourceTree = "<group>"; };
+		2B0B1B9E1859E13E00F45458 /* UNIBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIBaseRequest.m; sourceTree = "<group>"; };
+		2B0B1B9F1859E13E00F45458 /* UNIBodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIBodyRequest.h; sourceTree = "<group>"; };
+		2B0B1BA01859E13E00F45458 /* UNIBodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIBodyRequest.m; sourceTree = "<group>"; };
+		2B0B1BA11859E13E00F45458 /* UNISimpleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNISimpleRequest.h; sourceTree = "<group>"; };
+		2B0B1BA21859E13E00F45458 /* UNISimpleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNISimpleRequest.m; sourceTree = "<group>"; };
+		2B0B1BA41859E13E00F45458 /* UNIHTTPBinaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPBinaryResponse.h; sourceTree = "<group>"; };
+		2B0B1BA51859E13E00F45458 /* UNIHTTPBinaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPBinaryResponse.m; sourceTree = "<group>"; };
+		2B0B1BA61859E13E00F45458 /* UNIHTTPJsonResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPJsonResponse.h; sourceTree = "<group>"; };
+		2B0B1BA71859E13E00F45458 /* UNIHTTPJsonResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPJsonResponse.m; sourceTree = "<group>"; };
+		2B0B1BA81859E13E00F45458 /* UNIHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPResponse.h; sourceTree = "<group>"; };
+		2B0B1BA91859E13E00F45458 /* UNIHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPResponse.m; sourceTree = "<group>"; };
+		2B0B1BAA1859E13E00F45458 /* UNIHTTPStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPStringResponse.h; sourceTree = "<group>"; };
+		2B0B1BAB1859E13E00F45458 /* UNIHTTPStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPStringResponse.m; sourceTree = "<group>"; };
+		2B0B1BAC1859E13E00F45458 /* UNIJsonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIJsonNode.h; sourceTree = "<group>"; };
+		2B0B1BAD1859E13E00F45458 /* UNIJsonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIJsonNode.m; sourceTree = "<group>"; };
+		2B0B1BAE1859E13E00F45458 /* UNIHTTPClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPClientHelper.h; sourceTree = "<group>"; };
+		2B0B1BAF1859E13E00F45458 /* UNIHTTPClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPClientHelper.m; sourceTree = "<group>"; };
+		2B0B1BB01859E13E00F45458 /* UNIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPRequest.h; sourceTree = "<group>"; };
+		2B0B1BB11859E13E00F45458 /* UNIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPRequest.m; sourceTree = "<group>"; };
+		2B0B1BB21859E13E00F45458 /* UNIHTTPRequestWithBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIHTTPRequestWithBody.h; sourceTree = "<group>"; };
+		2B0B1BB31859E13E00F45458 /* UNIHTTPRequestWithBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIHTTPRequestWithBody.m; sourceTree = "<group>"; };
+		2B0B1BB41859E13E00F45458 /* Unirest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Unirest-Prefix.pch"; sourceTree = "<group>"; };
+		2B0B1BB51859E13E00F45458 /* Unirest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unirest.h; sourceTree = "<group>"; };
+		2B0B1BB61859E13E00F45458 /* Unirest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unirest.m; sourceTree = "<group>"; };
+		2B0B1BB71859E13E00F45458 /* UNIUrlConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNIUrlConnection.h; sourceTree = "<group>"; };
+		2B0B1BB81859E13E00F45458 /* UNIUrlConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNIUrlConnection.m; sourceTree = "<group>"; };
+		2BE9D4DF184C7B280016A393 /* AVOSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVOSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE9D4E2184C7B280016A393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2BE9D4E4184C7B280016A393 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BE9D4E6184C7B280016A393 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BE9D4EA184C7B280016A393 /* AVOSDKTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVOSDKTest-Info.plist"; sourceTree = "<group>"; };
+		2BE9D4EC184C7B280016A393 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BE9D4EE184C7B280016A393 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BE9D4F0184C7B280016A393 /* AVOSDKTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVOSDKTest-Prefix.pch"; sourceTree = "<group>"; };
+		2BE9D4F1184C7B280016A393 /* AVO_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVO_AppDelegate.h; sourceTree = "<group>"; };
+		2BE9D4F2184C7B280016A393 /* AVO_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVO_AppDelegate.m; sourceTree = "<group>"; };
+		2BE9D4F5184C7B280016A393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BE9D4F7184C7B280016A393 /* AVO_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVO_ViewController.h; sourceTree = "<group>"; };
+		2BE9D4F8184C7B280016A393 /* AVO_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVO_ViewController.m; sourceTree = "<group>"; };
+		2BE9D4FA184C7B280016A393 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2BE9D500184C7B280016A393 /* AVOSDKTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVOSDKTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE9D501184C7B280016A393 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2BE9D509184C7B280016A393 /* AVOSDKTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVOSDKTestTests-Info.plist"; sourceTree = "<group>"; };
+		2BE9D50B184C7B280016A393 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2BE9D50D184C7B280016A393 /* AVOSDKTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVOSDKTestTests.m; sourceTree = "<group>"; };
+		2BE9D5CD184C87900016A393 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		2BEC1671185C921600A436F9 /* AVOAPIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIConstants.h; sourceTree = "<group>"; };
+		2BEC1672185C921600A436F9 /* AVOAPIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIConstants.m; sourceTree = "<group>"; };
+		2BEC1674185C921600A436F9 /* AVOAPICreateBillPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateBillPaymentRequest.h; sourceTree = "<group>"; };
+		2BEC1675185C921600A436F9 /* AVOAPICreateBillPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateBillPaymentRequest.m; sourceTree = "<group>"; };
+		2BEC1676185C921600A436F9 /* AVOAPICreateLocalUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateLocalUserRequest.h; sourceTree = "<group>"; };
+		2BEC1677185C921600A436F9 /* AVOAPICreateLocalUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateLocalUserRequest.m; sourceTree = "<group>"; };
+		2BEC1678185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateLocalUserTokenRequest.h; sourceTree = "<group>"; };
+		2BEC1679185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateLocalUserTokenRequest.m; sourceTree = "<group>"; };
+		2BEC167A185C921600A436F9 /* AVOAPICreateMomentCommentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateMomentCommentRequest.h; sourceTree = "<group>"; };
+		2BEC167B185C921600A436F9 /* AVOAPICreateMomentCommentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateMomentCommentRequest.m; sourceTree = "<group>"; };
+		2BEC167C185C921600A436F9 /* AVOAPICreateMomentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateMomentRequest.h; sourceTree = "<group>"; };
+		2BEC167D185C921600A436F9 /* AVOAPICreateMomentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateMomentRequest.m; sourceTree = "<group>"; };
+		2BEC167E185C921600A436F9 /* AVOAPICreateTripSummaryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateTripSummaryRequest.h; sourceTree = "<group>"; };
+		2BEC167F185C921600A436F9 /* AVOAPICreateTripSummaryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateTripSummaryRequest.m; sourceTree = "<group>"; };
+		2BEC1680185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIUpdateLocalUserRequest.h; sourceTree = "<group>"; };
+		2BEC1681185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIUpdateLocalUserRequest.m; sourceTree = "<group>"; };
+		2BEC1682185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIUpdateMomentBillRequest.h; sourceTree = "<group>"; };
+		2BEC1683185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIUpdateMomentBillRequest.m; sourceTree = "<group>"; };
+		2BEC1684185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIUpdateTripMemberRequest.h; sourceTree = "<group>"; };
+		2BEC1685185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIUpdateTripMemberRequest.m; sourceTree = "<group>"; };
+		2BEC1686185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIUpdateTripSummaryRequest.h; sourceTree = "<group>"; };
+		2BEC1687185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIUpdateTripSummaryRequest.m; sourceTree = "<group>"; };
+		2BEC1688185C921600A436F9 /* AVOAPIUpdateUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIUpdateUserRequest.h; sourceTree = "<group>"; };
+		2BEC1689185C921600A436F9 /* AVOAPIUpdateUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIUpdateUserRequest.m; sourceTree = "<group>"; };
+		2BEC168B185C921600A436F9 /* AVOAPICommonErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICommonErrorResponse.h; sourceTree = "<group>"; };
+		2BEC168C185C921600A436F9 /* AVOAPICommonErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICommonErrorResponse.m; sourceTree = "<group>"; };
+		2BEC168D185C921600A436F9 /* AVOAPICreateImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateImageResponse.h; sourceTree = "<group>"; };
+		2BEC168E185C921600A436F9 /* AVOAPICreateImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateImageResponse.m; sourceTree = "<group>"; };
+		2BEC168F185C921600A436F9 /* AVOAPICreateLocalUserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateLocalUserResponse.h; sourceTree = "<group>"; };
+		2BEC1690185C921600A436F9 /* AVOAPICreateLocalUserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateLocalUserResponse.m; sourceTree = "<group>"; };
+		2BEC1691185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateLocalUserTokenResponse.h; sourceTree = "<group>"; };
+		2BEC1692185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateLocalUserTokenResponse.m; sourceTree = "<group>"; };
+		2BEC1693185C921600A436F9 /* AVOAPICreateMomentCommentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateMomentCommentResponse.h; sourceTree = "<group>"; };
+		2BEC1694185C921600A436F9 /* AVOAPICreateMomentCommentResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateMomentCommentResponse.m; sourceTree = "<group>"; };
+		2BEC1695185C921600A436F9 /* AVOAPICreateMomentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateMomentResponse.h; sourceTree = "<group>"; };
+		2BEC1696185C921600A436F9 /* AVOAPICreateMomentResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateMomentResponse.m; sourceTree = "<group>"; };
+		2BEC1697185C921600A436F9 /* AVOAPICreateTripSummaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPICreateTripSummaryResponse.h; sourceTree = "<group>"; };
+		2BEC1698185C921600A436F9 /* AVOAPICreateTripSummaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPICreateTripSummaryResponse.m; sourceTree = "<group>"; };
+		2BEC1699185C921600A436F9 /* AVOAPIGetBillDetailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetBillDetailResponse.h; sourceTree = "<group>"; };
+		2BEC169A185C921600A436F9 /* AVOAPIGetBillDetailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetBillDetailResponse.m; sourceTree = "<group>"; };
+		2BEC169B185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetBillPaymentsResponse.h; sourceTree = "<group>"; };
+		2BEC169C185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetBillPaymentsResponse.m; sourceTree = "<group>"; };
+		2BEC169D185C921600A436F9 /* AVOAPIGetImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetImageResponse.h; sourceTree = "<group>"; };
+		2BEC169E185C921600A436F9 /* AVOAPIGetImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetImageResponse.m; sourceTree = "<group>"; };
+		2BEC169F185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetMomentCommentsResponse.h; sourceTree = "<group>"; };
+		2BEC16A0185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetMomentCommentsResponse.m; sourceTree = "<group>"; };
+		2BEC16A1185C921600A436F9 /* AVOAPIGetMomentsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetMomentsResponse.h; sourceTree = "<group>"; };
+		2BEC16A2185C921600A436F9 /* AVOAPIGetMomentsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetMomentsResponse.m; sourceTree = "<group>"; };
+		2BEC16A3185C921600A436F9 /* AVOAPIGetTripMembersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetTripMembersResponse.h; sourceTree = "<group>"; };
+		2BEC16A4185C921600A436F9 /* AVOAPIGetTripMembersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetTripMembersResponse.m; sourceTree = "<group>"; };
+		2BEC16A5185C921600A436F9 /* AVOAPIGetTripResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetTripResponse.h; sourceTree = "<group>"; };
+		2BEC16A6185C921600A436F9 /* AVOAPIGetTripResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetTripResponse.m; sourceTree = "<group>"; };
+		2BEC16A7185C921600A436F9 /* AVOAPIGetTripsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetTripsResponse.h; sourceTree = "<group>"; };
+		2BEC16A8185C921600A436F9 /* AVOAPIGetTripsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetTripsResponse.m; sourceTree = "<group>"; };
+		2BEC16A9185C921600A436F9 /* AVOAPIGetUserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOAPIGetUserResponse.h; sourceTree = "<group>"; };
+		2BEC16AA185C921600A436F9 /* AVOAPIGetUserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOAPIGetUserResponse.m; sourceTree = "<group>"; };
+		2BEC16AB185C921600A436F9 /* ARCSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCSingletonTemplate.h; sourceTree = "<group>"; };
+		2BEC16AD185C921600A436F9 /* AVOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOClient.h; sourceTree = "<group>"; };
+		2BEC16AE185C921600A436F9 /* AVOKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOKeyManager.h; sourceTree = "<group>"; };
+		2BEC16B0185C921600A436F9 /* NVIOTClientException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVIOTClientException.h; sourceTree = "<group>"; };
+		2BEC16B1185C921600A436F9 /* NVIOTClientException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVIOTClientException.m; sourceTree = "<group>"; };
+		2BEC16B2185C921600A436F9 /* NVIOTServiceException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVIOTServiceException.h; sourceTree = "<group>"; };
+		2BEC16B3185C921600A436F9 /* NVIOTServiceException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVIOTServiceException.m; sourceTree = "<group>"; };
+		2BEC16B4185C921600A436F9 /* NVIOTUserAuthFailedException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVIOTUserAuthFailedException.h; sourceTree = "<group>"; };
+		2BEC16B5185C921600A436F9 /* NVIOTUserAuthFailedException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVIOTUserAuthFailedException.m; sourceTree = "<group>"; };
+		2BEC16B7185C921600A436F9 /* NVHttpConstans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVHttpConstans.h; sourceTree = "<group>"; };
+		2BEC16B8185C921600A436F9 /* NVHttpConstans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVHttpConstans.m; sourceTree = "<group>"; };
+		2BEC16B9185C921600A436F9 /* NVPlainHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVPlainHttpClient.h; sourceTree = "<group>"; };
+		2BEC16BA185C921600A436F9 /* NVPlainHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPlainHttpClient.m; sourceTree = "<group>"; };
+		2BEC16BC185C921600A436F9 /* NVBasicClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVBasicClient.h; sourceTree = "<group>"; };
+		2BEC16BD185C921600A436F9 /* NVBasicClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVBasicClient.m; sourceTree = "<group>"; };
+		2BEC16BE185C921600A436F9 /* NVInDiskKeyMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVInDiskKeyMananger.h; sourceTree = "<group>"; };
+		2BEC16BF185C921600A436F9 /* NVInDiskKeyMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVInDiskKeyMananger.m; sourceTree = "<group>"; };
+		2BEC16C0185C921600A436F9 /* NVInMemoryKeyMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVInMemoryKeyMananger.h; sourceTree = "<group>"; };
+		2BEC16C1185C921600A436F9 /* NVInMemoryKeyMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVInMemoryKeyMananger.m; sourceTree = "<group>"; };
+		2BEC16C3185C921600A436F9 /* AVOCommModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOCommModel.h; sourceTree = "<group>"; };
+		2BEC16C4185C921600A436F9 /* AVOCommModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOCommModel.m; sourceTree = "<group>"; };
+		2BEC16C5185C921600A436F9 /* AVOImageLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOImageLink.h; sourceTree = "<group>"; };
+		2BEC16C6185C921600A436F9 /* AVOImageLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOImageLink.m; sourceTree = "<group>"; };
+		2BEC16C7185C921600A436F9 /* AVOLocalCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOLocalCredential.h; sourceTree = "<group>"; };
+		2BEC16C8185C921600A436F9 /* AVOLocalCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOLocalCredential.m; sourceTree = "<group>"; };
+		2BEC16C9185C921600A436F9 /* AVOMoment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMoment.h; sourceTree = "<group>"; };
+		2BEC16CA185C921600A436F9 /* AVOMoment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMoment.m; sourceTree = "<group>"; };
+		2BEC16CB185C921600A436F9 /* AVOMomentBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMomentBill.h; sourceTree = "<group>"; };
+		2BEC16CC185C921600A436F9 /* AVOMomentBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMomentBill.m; sourceTree = "<group>"; };
+		2BEC16CD185C921600A436F9 /* AVOMomentBillDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMomentBillDetail.h; sourceTree = "<group>"; };
+		2BEC16CE185C921600A436F9 /* AVOMomentBillDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMomentBillDetail.m; sourceTree = "<group>"; };
+		2BEC16CF185C921600A436F9 /* AVOMomentBillPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMomentBillPayment.h; sourceTree = "<group>"; };
+		2BEC16D0185C921600A436F9 /* AVOMomentBillPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMomentBillPayment.m; sourceTree = "<group>"; };
+		2BEC16D1185C921600A436F9 /* AVOMomentComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMomentComment.h; sourceTree = "<group>"; };
+		2BEC16D2185C921600A436F9 /* AVOMomentComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMomentComment.m; sourceTree = "<group>"; };
+		2BEC16D3185C921600A436F9 /* AVOMomentNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMomentNote.h; sourceTree = "<group>"; };
+		2BEC16D4185C921600A436F9 /* AVOMomentNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMomentNote.m; sourceTree = "<group>"; };
+		2BEC16D5185C921600A436F9 /* AVOMomentPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOMomentPhoto.h; sourceTree = "<group>"; };
+		2BEC16D6185C921600A436F9 /* AVOMomentPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOMomentPhoto.m; sourceTree = "<group>"; };
+		2BEC16D7185C921600A436F9 /* AVOTripSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOTripSummary.h; sourceTree = "<group>"; };
+		2BEC16D8185C921600A436F9 /* AVOTripSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOTripSummary.m; sourceTree = "<group>"; };
+		2BEC16D9185C921600A436F9 /* AVOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOUser.h; sourceTree = "<group>"; };
+		2BEC16DA185C921600A436F9 /* AVOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOUser.m; sourceTree = "<group>"; };
+		2BEC16DB185C921600A436F9 /* AVOUserToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOUserToken.h; sourceTree = "<group>"; };
+		2BEC16DC185C921600A436F9 /* AVOUserToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOUserToken.m; sourceTree = "<group>"; };
+		2BEC16DD185C921600A436F9 /* AVOUserTripShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOUserTripShip.h; sourceTree = "<group>"; };
+		2BEC16DE185C921600A436F9 /* AVOUserTripShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOUserTripShip.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BE9D4DC184C7B280016A393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE9D4E5184C7B280016A393 /* CoreGraphics.framework in Frameworks */,
+				2BE9D4E7184C7B280016A393 /* UIKit.framework in Frameworks */,
+				2BE9D4E3184C7B280016A393 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE9D4FD184C7B280016A393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE9D502184C7B280016A393 /* XCTest.framework in Frameworks */,
+				2BE9D504184C7B280016A393 /* UIKit.framework in Frameworks */,
+				2BE9D503184C7B280016A393 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B0B1B991859E13E00F45458 /* Unirest */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B1B9A1859E13E00F45458 /* Base64.h */,
+				2B0B1B9B1859E13E00F45458 /* Base64.m */,
+				2B0B1B9C1859E13E00F45458 /* HttpRequest */,
+				2B0B1BA31859E13E00F45458 /* HttpResponse */,
+				2B0B1BAE1859E13E00F45458 /* UNIHTTPClientHelper.h */,
+				2B0B1BAF1859E13E00F45458 /* UNIHTTPClientHelper.m */,
+				2B0B1BB01859E13E00F45458 /* UNIHTTPRequest.h */,
+				2B0B1BB11859E13E00F45458 /* UNIHTTPRequest.m */,
+				2B0B1BB21859E13E00F45458 /* UNIHTTPRequestWithBody.h */,
+				2B0B1BB31859E13E00F45458 /* UNIHTTPRequestWithBody.m */,
+				2B0B1BB41859E13E00F45458 /* Unirest-Prefix.pch */,
+				2B0B1BB51859E13E00F45458 /* Unirest.h */,
+				2B0B1BB61859E13E00F45458 /* Unirest.m */,
+				2B0B1BB71859E13E00F45458 /* UNIUrlConnection.h */,
+				2B0B1BB81859E13E00F45458 /* UNIUrlConnection.m */,
+			);
+			name = Unirest;
+			path = "../../unirest-obj-c/Unirest/Unirest";
+			sourceTree = "<group>";
+		};
+		2B0B1B9C1859E13E00F45458 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B1B9D1859E13E00F45458 /* UNIBaseRequest.h */,
+				2B0B1B9E1859E13E00F45458 /* UNIBaseRequest.m */,
+				2B0B1B9F1859E13E00F45458 /* UNIBodyRequest.h */,
+				2B0B1BA01859E13E00F45458 /* UNIBodyRequest.m */,
+				2B0B1BA11859E13E00F45458 /* UNISimpleRequest.h */,
+				2B0B1BA21859E13E00F45458 /* UNISimpleRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		2B0B1BA31859E13E00F45458 /* HttpResponse */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B1BA41859E13E00F45458 /* UNIHTTPBinaryResponse.h */,
+				2B0B1BA51859E13E00F45458 /* UNIHTTPBinaryResponse.m */,
+				2B0B1BA61859E13E00F45458 /* UNIHTTPJsonResponse.h */,
+				2B0B1BA71859E13E00F45458 /* UNIHTTPJsonResponse.m */,
+				2B0B1BA81859E13E00F45458 /* UNIHTTPResponse.h */,
+				2B0B1BA91859E13E00F45458 /* UNIHTTPResponse.m */,
+				2B0B1BAA1859E13E00F45458 /* UNIHTTPStringResponse.h */,
+				2B0B1BAB1859E13E00F45458 /* UNIHTTPStringResponse.m */,
+				2B0B1BAC1859E13E00F45458 /* UNIJsonNode.h */,
+				2B0B1BAD1859E13E00F45458 /* UNIJsonNode.m */,
+			);
+			path = HttpResponse;
+			sourceTree = "<group>";
+		};
+		2BE9D4D6184C7B280016A393 = {
+			isa = PBXGroup;
+			children = (
+				2BEC166F185C921600A436F9 /* SDK */,
+				2B0B1B991859E13E00F45458 /* Unirest */,
+				2BE9D5CC184C87900016A393 /* images */,
+				2BE9D4E8184C7B280016A393 /* AVOSDKTest */,
+				2BE9D507184C7B280016A393 /* AVOSDKTestTests */,
+				2BE9D4E1184C7B280016A393 /* Frameworks */,
+				2BE9D4E0184C7B280016A393 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BE9D4E0184C7B280016A393 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D4DF184C7B280016A393 /* AVOSDKTest.app */,
+				2BE9D500184C7B280016A393 /* AVOSDKTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BE9D4E1184C7B280016A393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D4E2184C7B280016A393 /* Foundation.framework */,
+				2BE9D4E4184C7B280016A393 /* CoreGraphics.framework */,
+				2BE9D4E6184C7B280016A393 /* UIKit.framework */,
+				2BE9D501184C7B280016A393 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BE9D4E8184C7B280016A393 /* AVOSDKTest */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D4F1184C7B280016A393 /* AVO_AppDelegate.h */,
+				2BE9D4F2184C7B280016A393 /* AVO_AppDelegate.m */,
+				2BE9D4F4184C7B280016A393 /* Main.storyboard */,
+				2BE9D4F7184C7B280016A393 /* AVO_ViewController.h */,
+				2BE9D4F8184C7B280016A393 /* AVO_ViewController.m */,
+				2BE9D4FA184C7B280016A393 /* Images.xcassets */,
+				2BE9D4E9184C7B280016A393 /* Supporting Files */,
+			);
+			path = AVOSDKTest;
+			sourceTree = "<group>";
+		};
+		2BE9D4E9184C7B280016A393 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D4EA184C7B280016A393 /* AVOSDKTest-Info.plist */,
+				2BE9D4EB184C7B280016A393 /* InfoPlist.strings */,
+				2BE9D4EE184C7B280016A393 /* main.m */,
+				2BE9D4F0184C7B280016A393 /* AVOSDKTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BE9D507184C7B280016A393 /* AVOSDKTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D50D184C7B280016A393 /* AVOSDKTestTests.m */,
+				2BE9D508184C7B280016A393 /* Supporting Files */,
+			);
+			path = AVOSDKTestTests;
+			sourceTree = "<group>";
+		};
+		2BE9D508184C7B280016A393 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D509184C7B280016A393 /* AVOSDKTestTests-Info.plist */,
+				2BE9D50A184C7B280016A393 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BE9D5CC184C87900016A393 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2BE9D5CD184C87900016A393 /* 1.jpg */,
+			);
+			name = images;
+			path = AVOSDKTest/images;
+			sourceTree = "<group>";
+		};
+		2BEC166F185C921600A436F9 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC1670185C921600A436F9 /* API */,
+				2BEC16AB185C921600A436F9 /* ARCSingletonTemplate.h */,
+				2BEC16AC185C921600A436F9 /* Client */,
+				2BEC16C2185C921600A436F9 /* Model */,
+			);
+			name = SDK;
+			path = ../../SDK;
+			sourceTree = "<group>";
+		};
+		2BEC1670185C921600A436F9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC1671185C921600A436F9 /* AVOAPIConstants.h */,
+				2BEC1672185C921600A436F9 /* AVOAPIConstants.m */,
+				2BEC1673185C921600A436F9 /* Request */,
+				2BEC168A185C921600A436F9 /* Response */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2BEC1673185C921600A436F9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC1674185C921600A436F9 /* AVOAPICreateBillPaymentRequest.h */,
+				2BEC1675185C921600A436F9 /* AVOAPICreateBillPaymentRequest.m */,
+				2BEC1676185C921600A436F9 /* AVOAPICreateLocalUserRequest.h */,
+				2BEC1677185C921600A436F9 /* AVOAPICreateLocalUserRequest.m */,
+				2BEC1678185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.h */,
+				2BEC1679185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.m */,
+				2BEC167A185C921600A436F9 /* AVOAPICreateMomentCommentRequest.h */,
+				2BEC167B185C921600A436F9 /* AVOAPICreateMomentCommentRequest.m */,
+				2BEC167C185C921600A436F9 /* AVOAPICreateMomentRequest.h */,
+				2BEC167D185C921600A436F9 /* AVOAPICreateMomentRequest.m */,
+				2BEC167E185C921600A436F9 /* AVOAPICreateTripSummaryRequest.h */,
+				2BEC167F185C921600A436F9 /* AVOAPICreateTripSummaryRequest.m */,
+				2BEC1680185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.h */,
+				2BEC1681185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.m */,
+				2BEC1682185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.h */,
+				2BEC1683185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.m */,
+				2BEC1684185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.h */,
+				2BEC1685185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.m */,
+				2BEC1686185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.h */,
+				2BEC1687185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.m */,
+				2BEC1688185C921600A436F9 /* AVOAPIUpdateUserRequest.h */,
+				2BEC1689185C921600A436F9 /* AVOAPIUpdateUserRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2BEC168A185C921600A436F9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC168B185C921600A436F9 /* AVOAPICommonErrorResponse.h */,
+				2BEC168C185C921600A436F9 /* AVOAPICommonErrorResponse.m */,
+				2BEC168D185C921600A436F9 /* AVOAPICreateImageResponse.h */,
+				2BEC168E185C921600A436F9 /* AVOAPICreateImageResponse.m */,
+				2BEC168F185C921600A436F9 /* AVOAPICreateLocalUserResponse.h */,
+				2BEC1690185C921600A436F9 /* AVOAPICreateLocalUserResponse.m */,
+				2BEC1691185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.h */,
+				2BEC1692185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.m */,
+				2BEC1693185C921600A436F9 /* AVOAPICreateMomentCommentResponse.h */,
+				2BEC1694185C921600A436F9 /* AVOAPICreateMomentCommentResponse.m */,
+				2BEC1695185C921600A436F9 /* AVOAPICreateMomentResponse.h */,
+				2BEC1696185C921600A436F9 /* AVOAPICreateMomentResponse.m */,
+				2BEC1697185C921600A436F9 /* AVOAPICreateTripSummaryResponse.h */,
+				2BEC1698185C921600A436F9 /* AVOAPICreateTripSummaryResponse.m */,
+				2BEC1699185C921600A436F9 /* AVOAPIGetBillDetailResponse.h */,
+				2BEC169A185C921600A436F9 /* AVOAPIGetBillDetailResponse.m */,
+				2BEC169B185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.h */,
+				2BEC169C185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.m */,
+				2BEC169D185C921600A436F9 /* AVOAPIGetImageResponse.h */,
+				2BEC169E185C921600A436F9 /* AVOAPIGetImageResponse.m */,
+				2BEC169F185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.h */,
+				2BEC16A0185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.m */,
+				2BEC16A1185C921600A436F9 /* AVOAPIGetMomentsResponse.h */,
+				2BEC16A2185C921600A436F9 /* AVOAPIGetMomentsResponse.m */,
+				2BEC16A3185C921600A436F9 /* AVOAPIGetTripMembersResponse.h */,
+				2BEC16A4185C921600A436F9 /* AVOAPIGetTripMembersResponse.m */,
+				2BEC16A5185C921600A436F9 /* AVOAPIGetTripResponse.h */,
+				2BEC16A6185C921600A436F9 /* AVOAPIGetTripResponse.m */,
+				2BEC16A7185C921600A436F9 /* AVOAPIGetTripsResponse.h */,
+				2BEC16A8185C921600A436F9 /* AVOAPIGetTripsResponse.m */,
+				2BEC16A9185C921600A436F9 /* AVOAPIGetUserResponse.h */,
+				2BEC16AA185C921600A436F9 /* AVOAPIGetUserResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2BEC16AC185C921600A436F9 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC16AD185C921600A436F9 /* AVOClient.h */,
+				2BEC16AE185C921600A436F9 /* AVOKeyManager.h */,
+				2BEC16AF185C921600A436F9 /* Exception */,
+				2BEC16B6185C921600A436F9 /* Http */,
+				2BEC16BB185C921600A436F9 /* Impl */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2BEC16AF185C921600A436F9 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC16B0185C921600A436F9 /* NVIOTClientException.h */,
+				2BEC16B1185C921600A436F9 /* NVIOTClientException.m */,
+				2BEC16B2185C921600A436F9 /* NVIOTServiceException.h */,
+				2BEC16B3185C921600A436F9 /* NVIOTServiceException.m */,
+				2BEC16B4185C921600A436F9 /* NVIOTUserAuthFailedException.h */,
+				2BEC16B5185C921600A436F9 /* NVIOTUserAuthFailedException.m */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		2BEC16B6185C921600A436F9 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC16B7185C921600A436F9 /* NVHttpConstans.h */,
+				2BEC16B8185C921600A436F9 /* NVHttpConstans.m */,
+				2BEC16B9185C921600A436F9 /* NVPlainHttpClient.h */,
+				2BEC16BA185C921600A436F9 /* NVPlainHttpClient.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		2BEC16BB185C921600A436F9 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC16BC185C921600A436F9 /* NVBasicClient.h */,
+				2BEC16BD185C921600A436F9 /* NVBasicClient.m */,
+				2BEC16BE185C921600A436F9 /* NVInDiskKeyMananger.h */,
+				2BEC16BF185C921600A436F9 /* NVInDiskKeyMananger.m */,
+				2BEC16C0185C921600A436F9 /* NVInMemoryKeyMananger.h */,
+				2BEC16C1185C921600A436F9 /* NVInMemoryKeyMananger.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2BEC16C2185C921600A436F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC16C3185C921600A436F9 /* AVOCommModel.h */,
+				2BEC16C4185C921600A436F9 /* AVOCommModel.m */,
+				2BEC16C5185C921600A436F9 /* AVOImageLink.h */,
+				2BEC16C6185C921600A436F9 /* AVOImageLink.m */,
+				2BEC16C7185C921600A436F9 /* AVOLocalCredential.h */,
+				2BEC16C8185C921600A436F9 /* AVOLocalCredential.m */,
+				2BEC16C9185C921600A436F9 /* AVOMoment.h */,
+				2BEC16CA185C921600A436F9 /* AVOMoment.m */,
+				2BEC16CB185C921600A436F9 /* AVOMomentBill.h */,
+				2BEC16CC185C921600A436F9 /* AVOMomentBill.m */,
+				2BEC16CD185C921600A436F9 /* AVOMomentBillDetail.h */,
+				2BEC16CE185C921600A436F9 /* AVOMomentBillDetail.m */,
+				2BEC16CF185C921600A436F9 /* AVOMomentBillPayment.h */,
+				2BEC16D0185C921600A436F9 /* AVOMomentBillPayment.m */,
+				2BEC16D1185C921600A436F9 /* AVOMomentComment.h */,
+				2BEC16D2185C921600A436F9 /* AVOMomentComment.m */,
+				2BEC16D3185C921600A436F9 /* AVOMomentNote.h */,
+				2BEC16D4185C921600A436F9 /* AVOMomentNote.m */,
+				2BEC16D5185C921600A436F9 /* AVOMomentPhoto.h */,
+				2BEC16D6185C921600A436F9 /* AVOMomentPhoto.m */,
+				2BEC16D7185C921600A436F9 /* AVOTripSummary.h */,
+				2BEC16D8185C921600A436F9 /* AVOTripSummary.m */,
+				2BEC16D9185C921600A436F9 /* AVOUser.h */,
+				2BEC16DA185C921600A436F9 /* AVOUser.m */,
+				2BEC16DB185C921600A436F9 /* AVOUserToken.h */,
+				2BEC16DC185C921600A436F9 /* AVOUserToken.m */,
+				2BEC16DD185C921600A436F9 /* AVOUserTripShip.h */,
+				2BEC16DE185C921600A436F9 /* AVOUserTripShip.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BE9D4DE184C7B280016A393 /* AVOSDKTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE9D511184C7B280016A393 /* Build configuration list for PBXNativeTarget "AVOSDKTest" */;
+			buildPhases = (
+				2BE9D4DB184C7B280016A393 /* Sources */,
+				2BE9D4DC184C7B280016A393 /* Frameworks */,
+				2BE9D4DD184C7B280016A393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVOSDKTest;
+			productName = AVOSDKTest;
+			productReference = 2BE9D4DF184C7B280016A393 /* AVOSDKTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BE9D4FF184C7B280016A393 /* AVOSDKTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BE9D514184C7B280016A393 /* Build configuration list for PBXNativeTarget "AVOSDKTestTests" */;
+			buildPhases = (
+				2BE9D4FC184C7B280016A393 /* Sources */,
+				2BE9D4FD184C7B280016A393 /* Frameworks */,
+				2BE9D4FE184C7B280016A393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BE9D506184C7B280016A393 /* PBXTargetDependency */,
+			);
+			name = AVOSDKTestTests;
+			productName = AVOSDKTestTests;
+			productReference = 2BE9D500184C7B280016A393 /* AVOSDKTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BE9D4D7184C7B280016A393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AVO_;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Ramytech;
+				TargetAttributes = {
+					2BE9D4FF184C7B280016A393 = {
+						TestTargetID = 2BE9D4DE184C7B280016A393;
+					};
+				};
+			};
+			buildConfigurationList = 2BE9D4DA184C7B280016A393 /* Build configuration list for PBXProject "AVOSDKTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BE9D4D6184C7B280016A393;
+			productRefGroup = 2BE9D4E0184C7B280016A393 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BE9D4DE184C7B280016A393 /* AVOSDKTest */,
+				2BE9D4FF184C7B280016A393 /* AVOSDKTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BE9D4DD184C7B280016A393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE9D4FB184C7B280016A393 /* Images.xcassets in Resources */,
+				2BE9D5CE184C87900016A393 /* 1.jpg in Resources */,
+				2BE9D4ED184C7B280016A393 /* InfoPlist.strings in Resources */,
+				2BE9D4F6184C7B280016A393 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE9D4FE184C7B280016A393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE9D50C184C7B280016A393 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BE9D4DB184C7B280016A393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0B1BC21859E13E00F45458 /* UNIHTTPClientHelper.m in Sources */,
+				2BEC16FA185C921600A436F9 /* AVOAPIGetUserResponse.m in Sources */,
+				2BEC16F6185C921600A436F9 /* AVOAPIGetMomentsResponse.m in Sources */,
+				2BEC16E2185C921600A436F9 /* AVOAPICreateLocalUserTokenRequest.m in Sources */,
+				2BEC16E5185C921600A436F9 /* AVOAPICreateTripSummaryRequest.m in Sources */,
+				2BEC16DF185C921600A436F9 /* AVOAPIConstants.m in Sources */,
+				2BEC170A185C921600A436F9 /* AVOMomentComment.m in Sources */,
+				2BEC16E8185C921600A436F9 /* AVOAPIUpdateTripMemberRequest.m in Sources */,
+				2BE9D4EF184C7B280016A393 /* main.m in Sources */,
+				2B0B1BBE1859E13E00F45458 /* UNIHTTPJsonResponse.m in Sources */,
+				2BEC16FE185C921600A436F9 /* NVHttpConstans.m in Sources */,
+				2BEC16F8185C921600A436F9 /* AVOAPIGetTripResponse.m in Sources */,
+				2BEC16ED185C921600A436F9 /* AVOAPICreateLocalUserResponse.m in Sources */,
+				2BEC1701185C921600A436F9 /* NVInDiskKeyMananger.m in Sources */,
+				2BEC170B185C921600A436F9 /* AVOMomentNote.m in Sources */,
+				2B0B1BBB1859E13E00F45458 /* UNIBodyRequest.m in Sources */,
+				2BEC16F0185C921600A436F9 /* AVOAPICreateMomentResponse.m in Sources */,
+				2B0B1BC11859E13E00F45458 /* UNIJsonNode.m in Sources */,
+				2BEC1709185C921600A436F9 /* AVOMomentBillPayment.m in Sources */,
+				2BEC16F2185C921600A436F9 /* AVOAPIGetBillDetailResponse.m in Sources */,
+				2B0B1BC31859E13E00F45458 /* UNIHTTPRequest.m in Sources */,
+				2BEC16E7185C921600A436F9 /* AVOAPIUpdateMomentBillRequest.m in Sources */,
+				2BEC16F9185C921600A436F9 /* AVOAPIGetTripsResponse.m in Sources */,
+				2BEC16F4185C921600A436F9 /* AVOAPIGetImageResponse.m in Sources */,
+				2BEC16EA185C921600A436F9 /* AVOAPIUpdateUserRequest.m in Sources */,
+				2BEC16FC185C921600A436F9 /* NVIOTServiceException.m in Sources */,
+				2BEC16E4185C921600A436F9 /* AVOAPICreateMomentRequest.m in Sources */,
+				2BEC16EF185C921600A436F9 /* AVOAPICreateMomentCommentResponse.m in Sources */,
+				2BEC16EE185C921600A436F9 /* AVOAPICreateLocalUserTokenResponse.m in Sources */,
+				2B0B1BC61859E13E00F45458 /* UNIUrlConnection.m in Sources */,
+				2BEC170D185C921600A436F9 /* AVOTripSummary.m in Sources */,
+				2BEC1705185C921600A436F9 /* AVOLocalCredential.m in Sources */,
+				2BEC170E185C921600A436F9 /* AVOUser.m in Sources */,
+				2BEC16E1185C921600A436F9 /* AVOAPICreateLocalUserRequest.m in Sources */,
+				2BEC1700185C921600A436F9 /* NVBasicClient.m in Sources */,
+				2BEC16EC185C921600A436F9 /* AVOAPICreateImageResponse.m in Sources */,
+				2BEC1707185C921600A436F9 /* AVOMomentBill.m in Sources */,
+				2B0B1BBD1859E13E00F45458 /* UNIHTTPBinaryResponse.m in Sources */,
+				2BEC16FB185C921600A436F9 /* NVIOTClientException.m in Sources */,
+				2BEC170F185C921600A436F9 /* AVOUserToken.m in Sources */,
+				2BEC16EB185C921600A436F9 /* AVOAPICommonErrorResponse.m in Sources */,
+				2BEC16FD185C921600A436F9 /* NVIOTUserAuthFailedException.m in Sources */,
+				2BEC16F3185C921600A436F9 /* AVOAPIGetBillPaymentsResponse.m in Sources */,
+				2B0B1BBC1859E13E00F45458 /* UNISimpleRequest.m in Sources */,
+				2BEC1708185C921600A436F9 /* AVOMomentBillDetail.m in Sources */,
+				2BEC16E9185C921600A436F9 /* AVOAPIUpdateTripSummaryRequest.m in Sources */,
+				2BEC16F5185C921600A436F9 /* AVOAPIGetMomentCommentsResponse.m in Sources */,
+				2BEC1704185C921600A436F9 /* AVOImageLink.m in Sources */,
+				2B0B1BC41859E13E00F45458 /* UNIHTTPRequestWithBody.m in Sources */,
+				2BEC1710185C921600A436F9 /* AVOUserTripShip.m in Sources */,
+				2BEC16E6185C921600A436F9 /* AVOAPIUpdateLocalUserRequest.m in Sources */,
+				2B0B1BC01859E13E00F45458 /* UNIHTTPStringResponse.m in Sources */,
+				2B0B1BBF1859E13E00F45458 /* UNIHTTPResponse.m in Sources */,
+				2BEC16E3185C921600A436F9 /* AVOAPICreateMomentCommentRequest.m in Sources */,
+				2B0B1BB91859E13E00F45458 /* Base64.m in Sources */,
+				2BEC1703185C921600A436F9 /* AVOCommModel.m in Sources */,
+				2BEC1706185C921600A436F9 /* AVOMoment.m in Sources */,
+				2BEC170C185C921600A436F9 /* AVOMomentPhoto.m in Sources */,
+				2BEC1702185C921600A436F9 /* NVInMemoryKeyMananger.m in Sources */,
+				2BE9D4F9184C7B280016A393 /* AVO_ViewController.m in Sources */,
+				2BEC16E0185C921600A436F9 /* AVOAPICreateBillPaymentRequest.m in Sources */,
+				2BEC16F1185C921600A436F9 /* AVOAPICreateTripSummaryResponse.m in Sources */,
+				2BEC16F7185C921600A436F9 /* AVOAPIGetTripMembersResponse.m in Sources */,
+				2B0B1BC51859E13E00F45458 /* Unirest.m in Sources */,
+				2BEC16FF185C921600A436F9 /* NVPlainHttpClient.m in Sources */,
+				2BE9D4F3184C7B280016A393 /* AVO_AppDelegate.m in Sources */,
+				2B0B1BBA1859E13E00F45458 /* UNIBaseRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE9D4FC184C7B280016A393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE9D50E184C7B280016A393 /* AVOSDKTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BE9D506184C7B280016A393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BE9D4DE184C7B280016A393 /* AVOSDKTest */;
+			targetProxy = 2BE9D505184C7B280016A393 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BE9D4EB184C7B280016A393 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE9D4EC184C7B280016A393 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BE9D4F4184C7B280016A393 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE9D4F5184C7B280016A393 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BE9D50A184C7B280016A393 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE9D50B184C7B280016A393 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BE9D50F184C7B280016A393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BE9D510184C7B280016A393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BE9D512184C7B280016A393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVOSDKTest/AVOSDKTest-Prefix.pch";
+				INFOPLIST_FILE = "AVOSDKTest/AVOSDKTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2BE9D513184C7B280016A393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVOSDKTest/AVOSDKTest-Prefix.pch";
+				INFOPLIST_FILE = "AVOSDKTest/AVOSDKTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2BE9D515184C7B280016A393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVOSDKTest.app/AVOSDKTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVOSDKTest/AVOSDKTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AVOSDKTestTests/AVOSDKTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2BE9D516184C7B280016A393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AVOSDKTest.app/AVOSDKTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AVOSDKTest/AVOSDKTest-Prefix.pch";
+				INFOPLIST_FILE = "AVOSDKTestTests/AVOSDKTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BE9D4DA184C7B280016A393 /* Build configuration list for PBXProject "AVOSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE9D50F184C7B280016A393 /* Debug */,
+				2BE9D510184C7B280016A393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BE9D511184C7B280016A393 /* Build configuration list for PBXNativeTarget "AVOSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE9D512184C7B280016A393 /* Debug */,
+				2BE9D513184C7B280016A393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BE9D514184C7B280016A393 /* Build configuration list for PBXNativeTarget "AVOSDKTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE9D515184C7B280016A393 /* Debug */,
+				2BE9D516184C7B280016A393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BE9D4D7184C7B280016A393 /* Project object */;
+}

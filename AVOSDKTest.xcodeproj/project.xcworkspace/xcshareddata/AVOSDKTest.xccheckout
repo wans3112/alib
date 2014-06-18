@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59679C93-7E71-4DB7-AD3B-8F9CCA848764</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AVOSDKTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4FB44892-08EB-44D0-99D3-8FC0E3615499</key>
+		<string>ssh://git.ramy-inc.com/~/git/avolo-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>test/AVOSDKTest/AVOSDKTest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4FB44892-08EB-44D0-99D3-8FC0E3615499</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://git.ramy-inc.com/~/git/avolo-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4FB44892-08EB-44D0-99D3-8FC0E3615499</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4FB44892-08EB-44D0-99D3-8FC0E3615499</string>
+			<key>IDESourceControlWCCName</key>
+			<string>avolo-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
